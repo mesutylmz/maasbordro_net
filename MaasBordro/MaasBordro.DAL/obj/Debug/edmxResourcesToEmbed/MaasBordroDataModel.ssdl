@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WEBBORDROModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_BORDRO">
+    <Key>
+      <PropertyRef Name="IND" />
+    </Key>
+    <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PIND" Type="int" />
+    <Property Name="DIND" Type="int" />
+    <Property Name="MIND" Type="int" />
+    <Property Name="GUN" Type="int" />
+    <Property Name="NORMAL_KAZANC" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DIGER_KAZANC" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TOPLAM_KAZANC" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SSK_MATRAHI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SSK_PRIMI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ISSIZLIK_PRIMI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GVM_AYLIK" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GVM_TOPLAM" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GELIR_VERGISI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AGI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KALAN_GELIR_VERGISI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DAMGA_VERGISI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OZEL_KESINTI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AGI_HARIC_UCRET" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NET_ISTIHKAK" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NORMAL_UCRET" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GUN_UCRET" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FAZLA_MESAI_UCRET" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FAZLA_MESAI_SAAT" Type="nvarchar" MaxLength="50" />
+    <Property Name="TATIL_MESAI_UCRET" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TATIL_MESAI_GUN" Type="nvarchar" MaxLength="50" />
+    <Property Name="YEMEK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="YEMEK_GUNU" Type="nvarchar" MaxLength="50" />
+    <Property Name="COCUK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PRIM" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="YAKACAK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="HAFTASONU_MESAI_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="HAFTASONU_MESAI_GUNU" Type="nvarchar" MaxLength="50" />
+    <Property Name="SENDIKA_KESINTISI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AILE" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OTO_KAT_BE" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AVANS" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ICRA_KESINTISI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RAPOR_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RAPOR_GUN" Type="nvarchar" MaxLength="50" />
+    <Property Name="NAFAGA_UCRETI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KAYIT_TARIHI" Type="datetime" />
+    <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_DONEMLER">
+    <Key>
+      <PropertyRef Name="IND" />
+    </Key>
+    <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DIND" Type="int" />
+    <Property Name="DONEM" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAYIT_TARIHI" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBL_MUDURLUK">
+    <Key>
+      <PropertyRef Name="IND" />
+    </Key>
+    <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MIND" Type="int" />
+    <Property Name="MUDURLUGU" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TBL_PERSONEL">
+    <Key>
+      <PropertyRef Name="IND" />
+    </Key>
+    <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PIND" Type="int" />
+    <Property Name="MIND" Type="int" />
+    <Property Name="TC_NO" Type="nvarchar" MaxLength="11" />
+    <Property Name="AD_SOYAD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISE_GIRIS_TARIHI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SGK" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIFRE" Type="nvarchar" MaxLength="20" />
+    <Property Name="KAYIT_TARIHI" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="WEBBORDROModelStoreContainer">
+    <EntitySet Name="TBL_BORDRO" EntityType="Self.TBL_BORDRO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_DONEMLER" EntityType="Self.TBL_DONEMLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_MUDURLUK" EntityType="Self.TBL_MUDURLUK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_PERSONEL" EntityType="Self.TBL_PERSONEL" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

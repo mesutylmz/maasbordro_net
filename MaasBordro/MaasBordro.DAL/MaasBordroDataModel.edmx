@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WEBBORDROModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TBL_BORDRO">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PIND" Type="int" />
+          <Property Name="DIND" Type="int" />
+          <Property Name="MIND" Type="int" />
+          <Property Name="GUN" Type="int" />
+          <Property Name="NORMAL_KAZANC" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DIGER_KAZANC" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TOPLAM_KAZANC" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SSK_MATRAHI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SSK_PRIMI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ISSIZLIK_PRIMI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GVM_AYLIK" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GVM_TOPLAM" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GELIR_VERGISI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AGI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="KALAN_GELIR_VERGISI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DAMGA_VERGISI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="OZEL_KESINTI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AGI_HARIC_UCRET" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NET_ISTIHKAK" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NORMAL_UCRET" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GUN_UCRET" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FAZLA_MESAI_UCRET" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FAZLA_MESAI_SAAT" Type="nvarchar" MaxLength="50" />
+          <Property Name="TATIL_MESAI_UCRET" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TATIL_MESAI_GUN" Type="nvarchar" MaxLength="50" />
+          <Property Name="YEMEK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="YEMEK_GUNU" Type="nvarchar" MaxLength="50" />
+          <Property Name="COCUK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PRIM" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="YAKACAK_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="HAFTASONU_MESAI_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="HAFTASONU_MESAI_GUNU" Type="nvarchar" MaxLength="50" />
+          <Property Name="SENDIKA_KESINTISI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AILE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="OTO_KAT_BE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AVANS" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ICRA_KESINTISI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="RAPOR_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="RAPOR_GUN" Type="nvarchar" MaxLength="50" />
+          <Property Name="NAFAGA_UCRETI" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="KAYIT_TARIHI" Type="datetime" />
+          <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TBL_DONEMLER">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DIND" Type="int" />
+          <Property Name="DONEM" Type="nvarchar" MaxLength="50" />
+          <Property Name="KAYIT_TARIHI" Type="nvarchar" MaxLength="50" />
+          <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TBL_MUDURLUK">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MIND" Type="int" />
+          <Property Name="MUDURLUGU" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="TBL_PERSONEL">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PIND" Type="int" />
+          <Property Name="MIND" Type="int" />
+          <Property Name="TC_NO" Type="nvarchar" MaxLength="11" />
+          <Property Name="AD_SOYAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="ISE_GIRIS_TARIHI" Type="nvarchar" MaxLength="50" />
+          <Property Name="SGK" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIFRE" Type="nvarchar" MaxLength="20" />
+          <Property Name="KAYIT_TARIHI" Type="nvarchar" MaxLength="50" />
+          <Property Name="KAYDEDEN" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="WEBBORDROModelStoreContainer">
+          <EntitySet Name="TBL_BORDRO" EntityType="Self.TBL_BORDRO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_DONEMLER" EntityType="Self.TBL_DONEMLER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_MUDURLUK" EntityType="Self.TBL_MUDURLUK" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_PERSONEL" EntityType="Self.TBL_PERSONEL" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WEBBORDROModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBL_BORDRO">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PIND" Type="Int32" />
+          <Property Name="DIND" Type="Int32" />
+          <Property Name="MIND" Type="Int32" />
+          <Property Name="GUN" Type="Int32" />
+          <Property Name="NORMAL_KAZANC" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DIGER_KAZANC" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TOPLAM_KAZANC" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SSK_MATRAHI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SSK_PRIMI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ISSIZLIK_PRIMI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GVM_AYLIK" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GVM_TOPLAM" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GELIR_VERGISI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AGI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="KALAN_GELIR_VERGISI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DAMGA_VERGISI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="OZEL_KESINTI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AGI_HARIC_UCRET" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NET_ISTIHKAK" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NORMAL_UCRET" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GUN_UCRET" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FAZLA_MESAI_UCRET" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FAZLA_MESAI_SAAT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TATIL_MESAI_UCRET" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TATIL_MESAI_GUN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="YEMEK_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="YEMEK_GUNU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COCUK_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PRIM" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="YAKACAK_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="HAFTASONU_MESAI_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="HAFTASONU_MESAI_GUNU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SENDIKA_KESINTISI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AILE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="OTO_KAT_BE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AVANS" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ICRA_KESINTISI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RAPOR_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RAPOR_GUN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NAFAGA_UCRETI" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="KAYIT_TARIHI" Type="DateTime" Precision="3" />
+          <Property Name="KAYDEDEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBL_DONEMLER">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DIND" Type="Int32" />
+          <Property Name="DONEM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KAYIT_TARIHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KAYDEDEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBL_MUDURLUK">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MIND" Type="Int32" />
+          <Property Name="MUDURLUGU" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBL_PERSONEL">
+          <Key>
+            <PropertyRef Name="IND" />
+          </Key>
+          <Property Name="IND" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PIND" Type="Int32" />
+          <Property Name="MIND" Type="Int32" />
+          <Property Name="TC_NO" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="AD_SOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ISE_GIRIS_TARIHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SGK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SIFRE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="KAYIT_TARIHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KAYDEDEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="WEBBORDROEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TBL_BORDRO" EntityType="Self.TBL_BORDRO" />
+          <EntitySet Name="TBL_DONEMLER" EntityType="Self.TBL_DONEMLER" />
+          <EntitySet Name="TBL_MUDURLUK" EntityType="Self.TBL_MUDURLUK" />
+          <EntitySet Name="TBL_PERSONEL" EntityType="Self.TBL_PERSONEL" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WEBBORDROModelStoreContainer" CdmEntityContainer="WEBBORDROEntities">
+          <EntitySetMapping Name="TBL_BORDRO">
+            <EntityTypeMapping TypeName="WEBBORDROModel.TBL_BORDRO">
+              <MappingFragment StoreEntitySet="TBL_BORDRO">
+                <ScalarProperty Name="IND" ColumnName="IND" />
+                <ScalarProperty Name="PIND" ColumnName="PIND" />
+                <ScalarProperty Name="DIND" ColumnName="DIND" />
+                <ScalarProperty Name="MIND" ColumnName="MIND" />
+                <ScalarProperty Name="GUN" ColumnName="GUN" />
+                <ScalarProperty Name="NORMAL_KAZANC" ColumnName="NORMAL_KAZANC" />
+                <ScalarProperty Name="DIGER_KAZANC" ColumnName="DIGER_KAZANC" />
+                <ScalarProperty Name="TOPLAM_KAZANC" ColumnName="TOPLAM_KAZANC" />
+                <ScalarProperty Name="SSK_MATRAHI" ColumnName="SSK_MATRAHI" />
+                <ScalarProperty Name="SSK_PRIMI" ColumnName="SSK_PRIMI" />
+                <ScalarProperty Name="ISSIZLIK_PRIMI" ColumnName="ISSIZLIK_PRIMI" />
+                <ScalarProperty Name="GVM_AYLIK" ColumnName="GVM_AYLIK" />
+                <ScalarProperty Name="GVM_TOPLAM" ColumnName="GVM_TOPLAM" />
+                <ScalarProperty Name="GELIR_VERGISI" ColumnName="GELIR_VERGISI" />
+                <ScalarProperty Name="AGI" ColumnName="AGI" />
+                <ScalarProperty Name="KALAN_GELIR_VERGISI" ColumnName="KALAN_GELIR_VERGISI" />
+                <ScalarProperty Name="DAMGA_VERGISI" ColumnName="DAMGA_VERGISI" />
+                <ScalarProperty Name="OZEL_KESINTI" ColumnName="OZEL_KESINTI" />
+                <ScalarProperty Name="AGI_HARIC_UCRET" ColumnName="AGI_HARIC_UCRET" />
+                <ScalarProperty Name="NET_ISTIHKAK" ColumnName="NET_ISTIHKAK" />
+                <ScalarProperty Name="NORMAL_UCRET" ColumnName="NORMAL_UCRET" />
+                <ScalarProperty Name="GUN_UCRET" ColumnName="GUN_UCRET" />
+                <ScalarProperty Name="FAZLA_MESAI_UCRET" ColumnName="FAZLA_MESAI_UCRET" />
+                <ScalarProperty Name="FAZLA_MESAI_SAAT" ColumnName="FAZLA_MESAI_SAAT" />
+                <ScalarProperty Name="TATIL_MESAI_UCRET" ColumnName="TATIL_MESAI_UCRET" />
+                <ScalarProperty Name="TATIL_MESAI_GUN" ColumnName="TATIL_MESAI_GUN" />
+                <ScalarProperty Name="YEMEK_UCRETI" ColumnName="YEMEK_UCRETI" />
+                <ScalarProperty Name="YEMEK_GUNU" ColumnName="YEMEK_GUNU" />
+                <ScalarProperty Name="COCUK_UCRETI" ColumnName="COCUK_UCRETI" />
+                <ScalarProperty Name="PRIM" ColumnName="PRIM" />
+                <ScalarProperty Name="YAKACAK_UCRETI" ColumnName="YAKACAK_UCRETI" />
+                <ScalarProperty Name="HAFTASONU_MESAI_UCRETI" ColumnName="HAFTASONU_MESAI_UCRETI" />
+                <ScalarProperty Name="HAFTASONU_MESAI_GUNU" ColumnName="HAFTASONU_MESAI_GUNU" />
+                <ScalarProperty Name="SENDIKA_KESINTISI" ColumnName="SENDIKA_KESINTISI" />
+                <ScalarProperty Name="AILE" ColumnName="AILE" />
+                <ScalarProperty Name="OTO_KAT_BE" ColumnName="OTO_KAT_BE" />
+                <ScalarProperty Name="AVANS" ColumnName="AVANS" />
+                <ScalarProperty Name="ICRA_KESINTISI" ColumnName="ICRA_KESINTISI" />
+                <ScalarProperty Name="RAPOR_UCRETI" ColumnName="RAPOR_UCRETI" />
+                <ScalarProperty Name="RAPOR_GUN" ColumnName="RAPOR_GUN" />
+                <ScalarProperty Name="NAFAGA_UCRETI" ColumnName="NAFAGA_UCRETI" />
+                <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+                <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_DONEMLER">
+            <EntityTypeMapping TypeName="WEBBORDROModel.TBL_DONEMLER">
+              <MappingFragment StoreEntitySet="TBL_DONEMLER">
+                <ScalarProperty Name="IND" ColumnName="IND" />
+                <ScalarProperty Name="DIND" ColumnName="DIND" />
+                <ScalarProperty Name="DONEM" ColumnName="DONEM" />
+                <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+                <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_MUDURLUK">
+            <EntityTypeMapping TypeName="WEBBORDROModel.TBL_MUDURLUK">
+              <MappingFragment StoreEntitySet="TBL_MUDURLUK">
+                <ScalarProperty Name="IND" ColumnName="IND" />
+                <ScalarProperty Name="MIND" ColumnName="MIND" />
+                <ScalarProperty Name="MUDURLUGU" ColumnName="MUDURLUGU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_PERSONEL">
+            <EntityTypeMapping TypeName="WEBBORDROModel.TBL_PERSONEL">
+              <MappingFragment StoreEntitySet="TBL_PERSONEL">
+                <ScalarProperty Name="IND" ColumnName="IND" />
+                <ScalarProperty Name="PIND" ColumnName="PIND" />
+                <ScalarProperty Name="MIND" ColumnName="MIND" />
+                <ScalarProperty Name="TC_NO" ColumnName="TC_NO" />
+                <ScalarProperty Name="AD_SOYAD" ColumnName="AD_SOYAD" />
+                <ScalarProperty Name="ISE_GIRIS_TARIHI" ColumnName="ISE_GIRIS_TARIHI" />
+                <ScalarProperty Name="SGK" ColumnName="SGK" />
+                <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+                <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+                <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

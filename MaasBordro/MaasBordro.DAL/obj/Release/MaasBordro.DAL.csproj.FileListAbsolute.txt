@@ -1,0 +1,11 @@
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\MaasBordro.DAL.dll.config
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\MaasBordro.DAL.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\MaasBordro.DAL.pdb
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\EntityFramework.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\EntityFramework.xml
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\obj\Release\MaasBordro.DAL.csprojAssemblyReference.cache
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\obj\Release\MaasBordro.DAL.csproj.CopyComplete
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\obj\Release\MaasBordro.DAL.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.DAL\obj\Release\MaasBordro.DAL.pdb

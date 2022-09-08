@@ -1,0 +1,11 @@
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\MaasBordro.Repository.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\MaasBordro.Repository.pdb
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\MaasBordro.DAL.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\EntityFramework.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\MaasBordro.DAL.pdb
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\MaasBordro.DAL.dll.config
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\bin\Debug\EntityFramework.xml
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\obj\Debug\MaasBordro.Repository.csprojAssemblyReference.cache
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\obj\Debug\MaasBordro.Repository.csproj.CopyComplete
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\obj\Debug\MaasBordro.Repository.dll
+C:\Users\mesut\source\repos\MaasBordro\MaasBordro.Repository\obj\Debug\MaasBordro.Repository.pdb

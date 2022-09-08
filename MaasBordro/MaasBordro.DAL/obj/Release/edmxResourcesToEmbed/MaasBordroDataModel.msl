@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WEBBORDROModelStoreContainer" CdmEntityContainer="WEBBORDROEntities">
+    <EntitySetMapping Name="TBL_BORDRO">
+      <EntityTypeMapping TypeName="WEBBORDROModel.TBL_BORDRO">
+        <MappingFragment StoreEntitySet="TBL_BORDRO">
+          <ScalarProperty Name="IND" ColumnName="IND" />
+          <ScalarProperty Name="PIND" ColumnName="PIND" />
+          <ScalarProperty Name="DIND" ColumnName="DIND" />
+          <ScalarProperty Name="MIND" ColumnName="MIND" />
+          <ScalarProperty Name="GUN" ColumnName="GUN" />
+          <ScalarProperty Name="NORMAL_KAZANC" ColumnName="NORMAL_KAZANC" />
+          <ScalarProperty Name="DIGER_KAZANC" ColumnName="DIGER_KAZANC" />
+          <ScalarProperty Name="TOPLAM_KAZANC" ColumnName="TOPLAM_KAZANC" />
+          <ScalarProperty Name="SSK_MATRAHI" ColumnName="SSK_MATRAHI" />
+          <ScalarProperty Name="SSK_PRIMI" ColumnName="SSK_PRIMI" />
+          <ScalarProperty Name="ISSIZLIK_PRIMI" ColumnName="ISSIZLIK_PRIMI" />
+          <ScalarProperty Name="GVM_AYLIK" ColumnName="GVM_AYLIK" />
+          <ScalarProperty Name="GVM_TOPLAM" ColumnName="GVM_TOPLAM" />
+          <ScalarProperty Name="GELIR_VERGISI" ColumnName="GELIR_VERGISI" />
+          <ScalarProperty Name="AGI" ColumnName="AGI" />
+          <ScalarProperty Name="KALAN_GELIR_VERGISI" ColumnName="KALAN_GELIR_VERGISI" />
+          <ScalarProperty Name="DAMGA_VERGISI" ColumnName="DAMGA_VERGISI" />
+          <ScalarProperty Name="OZEL_KESINTI" ColumnName="OZEL_KESINTI" />
+          <ScalarProperty Name="AGI_HARIC_UCRET" ColumnName="AGI_HARIC_UCRET" />
+          <ScalarProperty Name="NET_ISTIHKAK" ColumnName="NET_ISTIHKAK" />
+          <ScalarProperty Name="NORMAL_UCRET" ColumnName="NORMAL_UCRET" />
+          <ScalarProperty Name="GUN_UCRET" ColumnName="GUN_UCRET" />
+          <ScalarProperty Name="FAZLA_MESAI_UCRET" ColumnName="FAZLA_MESAI_UCRET" />
+          <ScalarProperty Name="FAZLA_MESAI_SAAT" ColumnName="FAZLA_MESAI_SAAT" />
+          <ScalarProperty Name="TATIL_MESAI_UCRET" ColumnName="TATIL_MESAI_UCRET" />
+          <ScalarProperty Name="TATIL_MESAI_GUN" ColumnName="TATIL_MESAI_GUN" />
+          <ScalarProperty Name="YEMEK_UCRETI" ColumnName="YEMEK_UCRETI" />
+          <ScalarProperty Name="YEMEK_GUNU" ColumnName="YEMEK_GUNU" />
+          <ScalarProperty Name="COCUK_UCRETI" ColumnName="COCUK_UCRETI" />
+          <ScalarProperty Name="PRIM" ColumnName="PRIM" />
+          <ScalarProperty Name="YAKACAK_UCRETI" ColumnName="YAKACAK_UCRETI" />
+          <ScalarProperty Name="HAFTASONU_MESAI_UCRETI" ColumnName="HAFTASONU_MESAI_UCRETI" />
+          <ScalarProperty Name="HAFTASONU_MESAI_GUNU" ColumnName="HAFTASONU_MESAI_GUNU" />
+          <ScalarProperty Name="SENDIKA_KESINTISI" ColumnName="SENDIKA_KESINTISI" />
+          <ScalarProperty Name="AILE" ColumnName="AILE" />
+          <ScalarProperty Name="OTO_KAT_BE" ColumnName="OTO_KAT_BE" />
+          <ScalarProperty Name="AVANS" ColumnName="AVANS" />
+          <ScalarProperty Name="ICRA_KESINTISI" ColumnName="ICRA_KESINTISI" />
+          <ScalarProperty Name="RAPOR_UCRETI" ColumnName="RAPOR_UCRETI" />
+          <ScalarProperty Name="RAPOR_GUN" ColumnName="RAPOR_GUN" />
+          <ScalarProperty Name="NAFAGA_UCRETI" ColumnName="NAFAGA_UCRETI" />
+          <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+          <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_DONEMLER">
+      <EntityTypeMapping TypeName="WEBBORDROModel.TBL_DONEMLER">
+        <MappingFragment StoreEntitySet="TBL_DONEMLER">
+          <ScalarProperty Name="IND" ColumnName="IND" />
+          <ScalarProperty Name="DIND" ColumnName="DIND" />
+          <ScalarProperty Name="DONEM" ColumnName="DONEM" />
+          <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+          <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MUDURLUK">
+      <EntityTypeMapping TypeName="WEBBORDROModel.TBL_MUDURLUK">
+        <MappingFragment StoreEntitySet="TBL_MUDURLUK">
+          <ScalarProperty Name="IND" ColumnName="IND" />
+          <ScalarProperty Name="MIND" ColumnName="MIND" />
+          <ScalarProperty Name="MUDURLUGU" ColumnName="MUDURLUGU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_PERSONEL">
+      <EntityTypeMapping TypeName="WEBBORDROModel.TBL_PERSONEL">
+        <MappingFragment StoreEntitySet="TBL_PERSONEL">
+          <ScalarProperty Name="IND" ColumnName="IND" />
+          <ScalarProperty Name="PIND" ColumnName="PIND" />
+          <ScalarProperty Name="MIND" ColumnName="MIND" />
+          <ScalarProperty Name="TC_NO" ColumnName="TC_NO" />
+          <ScalarProperty Name="AD_SOYAD" ColumnName="AD_SOYAD" />
+          <ScalarProperty Name="ISE_GIRIS_TARIHI" ColumnName="ISE_GIRIS_TARIHI" />
+          <ScalarProperty Name="SGK" ColumnName="SGK" />
+          <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+          <ScalarProperty Name="KAYIT_TARIHI" ColumnName="KAYIT_TARIHI" />
+          <ScalarProperty Name="KAYDEDEN" ColumnName="KAYDEDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
